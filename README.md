@@ -1,2 +1,0 @@
-InfoBubble-jQuery
-=================

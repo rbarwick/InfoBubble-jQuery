@@ -1,0 +1,11 @@
+div.infobubble {
+    filter:alpha(opacity=85);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#d8ffffff, endColorstr=#d8ffffff)";
+}
+div.infobubble.dark {
+    filter:alpha(opacity=80);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000)";
+}
+
