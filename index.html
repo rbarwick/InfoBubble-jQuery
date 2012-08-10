@@ -2,7 +2,7 @@
 layout: default
 ---
 <article id="bubbles">
-    <div class="infobubble" style="left: 3em; top: 9em;">
+    <div class="infobubble" style="left: 3em; top: 9em;" id="bub-1">
         <dl>
             <dt>infobubble</dt>
             <dd>This box uses the style <strong>"arrow left up"</strong> for the arrow.</dd>
@@ -11,7 +11,7 @@ layout: default
         <div class="arrow left up"></div>
     </div>
 
-    <div class="infobubble" style="left: 21em; top: 9em;">
+    <div class="infobubble" style="left: 21em; top: 9em;" id="bub-2">
         <dl>
             <dt>infobubble</dt>
             <dd>This box uses the style <strong>"arrow right down"</strong> for the arrow.</dd>
@@ -20,7 +20,7 @@ layout: default
         <div class="arrow right down"></div>
     </div>
 
-    <div class="infobubble" style="left: 39em; top: 9em;">
+    <div class="infobubble" style="left: 39em; top: 9em;" id="bub-3">
         <dl>
             <dt>infobubble</dt>
             <dd>This box uses the style <strong>"arrow top left"</strong> for the arrow.</dd>
@@ -29,16 +29,16 @@ layout: default
         <div class="arrow top left"></div>
     </div>
 
-    <div class="infobubble" style="left: 57em; top: 9em;">
+    <div class="infobubble" style="left: 57em; top: 9em;" id="bub-4">
         <dl>
             <dt>infobubble</dt>
             <dd>This box uses the style <strong>"arrow bottom right"</strong> for the arrow.</dd>
         </dl>
         <div class="close">x</div>
-        <div class="arrow bottom right"></div>
+        <div class="arrow left down"></div>
     </div>
 
-    <div class="infobubble dark" style="left: 3em; top: 20em;">
+    <div class="infobubble dark" style="left: 3em; top: 20em;" id="bub-5">
         <dl>
             <dt>infobubble dark</dt>
             <dd>This box uses the style <strong>"arrow right up"</strong> for the arrow.</dd>
@@ -47,16 +47,7 @@ layout: default
         <div class="arrow right up"></div>
     </div>
 
-    <div class="infobubble dark" style="left: 21em; top: 20em;">
-        <dl>
-            <dt>infobubble dark</dt>
-            <dd>This box uses the style <strong>"arrow left down"</strong> for the arrow.</dd>
-        </dl>
-        <div class="close">x</div>
-        <div class="arrow left down"></div>
-    </div>
-
-    <div class="infobubble dark" style="left: 39em; top: 20em;">
+    <div class="infobubble dark" style="left: 21em; top: 20em;" id="bub-6">
         <dl>
             <dt>infobubble dark</dt>
             <dd>This box uses the style <strong>"arrow bottom left"</strong> for the arrow.</dd>
@@ -65,13 +56,25 @@ layout: default
         <div class="arrow bottom left"></div>
     </div>
 
-    <div class="infobubble dark" style="left: 57em; top: 20em;">
+    <div class="infobubble dark" style="left: 39em; top: 20em;" id="bub-7">
+        <dl>
+            <dt>infobubble dark</dt>
+            <dd>This box uses the style <strong>"arrow bottom left"</strong> for the arrow.</dd>
+        </dl>
+        <div class="close">x</div>
+        <div class="arrow left up"></div>
+    </div>
+
+    <div class="infobubble dark" style="left: 57em; top: 20em;" id="bub-8">
         <dl>
             <dt>infobubble dark</dt>
             <dd>This box uses the style <strong>"arrow right top"</strong> for the arrow.</dd>
         </dl>
         <div class="close">x</div>
-        <div class="arrow right top"></div>
+        <div class="arrow left top"></div>
     </div>
 </article>
 
+<script type="text/javascript">
+$('div[id^=bub-]').hide(); $(function () { var b = [1, 5, 6, 2, 3, 7, 8, 4], i; function f (i) { if (i > b.length - 1) return; $('#bub-' + b[i]).fadeIn(400, function () { f(i+1); }); } f(0); });
+</script>
