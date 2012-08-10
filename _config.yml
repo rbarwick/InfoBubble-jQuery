@@ -1,0 +1,24 @@
+safe: true
+auto: true
+baseurl: /
+
+source: .
+destination: ./_site
+plugins: ./_plugins
+
+future: false
+lsi: false
+pygments: true
+permalink: date
+
+title: InfoBubble
+subtitle: jquery.infobubble.js
+
+repo: https://github.com/tbjers/InfoBubble-jQuery
+
+exclude:
+  - Rakefile
+  - Gemfile
+  - .gitignore
+
+
