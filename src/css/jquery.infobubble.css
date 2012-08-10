@@ -48,6 +48,7 @@ div.infobubble>div.close {
     position: absolute;
     top: .9em;
     right: .9em;
+	cursor: pointer;
 }
 div.infobubble.dark>div.close {
     color: #000;
